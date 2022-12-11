@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: 'Neutral Face';
+  src: local("Neutral Face Regular"), local("Neutral-Face-Regular"), url("../Fonts/NeutralFaceRegular.woff2") format("woff2"), url("../Fonts/NeutralFaceRegular.woff") format("woff"), url("../Fonts/NeutralFaceRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("Montserrat-Regular.woff2") format("woff2"), url("Montserrat-Regular.woff") format("woff"), url("Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: local("Montserrat Semi Bold"), local("Montserrat-Semi-Bold"), url("../Fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../Fonts/Montserrat-SemiBold.woff") format("woff"), url("../Fonts/NeutralFaceRegular.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reza Zulmi Alfaizi';
+  src: local("Reza Zulmi Alfaizi"), local("Reza Zulmi Alfaizi"), url("../Fonts/RezaZulmiSerif.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background: url("../Images/BackgroundPhoto.png") center/cover no-repeat;
+  min-height: 1060px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.HeaderText {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HeaderText__title {
+  letter-spacing: 5px;
+  font-family: 'Neutral Face';
+  font-size: 100px;
+  margin-bottom: 0px;
+}
+
+.HeaderText__subtitle {
+  font-family: 'Reza Zulmi Alfaizi';
+  font-size: 39px;
+  margin-bottom: 0px;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  border: 0px;
+  margin-bottom: 5%;
+}
+
+.card-body {
+  padding: 0px;
+  margin-top: 3%;
+}
+
+.CountryList {
+  margin-top: 5.5%;
+}
+
+.BlockTitle {
+  font-size: 45px;
+  margin-bottom: 2.5%;
+  font-family: 'Neutral Face';
+}
+
+.card-title {
+  font-family: 'MontserratBold';
+  font-size: 26px;
+}
+
+.card-text {
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.ReasonsTextRight {
+  margin-left: 50%;
+}
+
+.ReasonsText {
+  font-family: 'Montserrat';
+  font-size: 28px;
+  margin-bottom: 5%;
+}
+
+.ReasonsList {
+  background: url("../Images/ReasonsBackground.png") center/cover no-repeat;
+  min-height: 1400px;
+}
+
+.CountryCards_Slider {
+  display: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e3e3e3ba;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.footer__text {
+  margin-left: 10%;
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+
+#logo {
+  margin-right: 10%;
+  width: 13%;
+}
+
+.footer_mail {
+  margin-bottom: 0px;
+}
+
+.footer {
+  margin-top: 9%;
+}
+
+.ReasonsBlockTitle {
+  font-size: 42px;
+}
+
+.ReasonsTextBottom {
+  margin-bottom: 0%;
+}
+
+@media (max-width: 1920px) {
+  .header {
+    min-height: 760px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .HeaderText__title {
+    font-size: 80px;
+  }
+  .HeaderText__subtitle {
+    font-size: 32px;
+  }
+  .header {
+    min-height: 680px;
+  }
+  .ReasonsBlockTitle {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 996px) {
+  .HeaderText__title {
+    font-size: 60px;
+  }
+  .HeaderText__subtitle {
+    font-size: 24px;
+  }
+  .header {
+    min-height: 540px;
+  }
+  .CountryList {
+    display: none;
+  }
+  .CountryCards_Slider {
+    display: block;
+  }
+  .BlockTitle {
+    margin-top: 10%;
+  }
+  .ReasonsTextRight {
+    margin-left: 0%;
+  }
+  .ReasonsList {
+    background: url("../Images/ReasonsBackground.png") center/cover no-repeat;
+    min-height: 1000px;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+  #logo {
+    min-height: 120px;
+  }
+  .footer_author {
+    margin-bottom: 8px;
+  }
+  #logo {
+    width: 16%;
+  }
+  .card-title {
+    font-size: 35px;
+  }
+  .card-text {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 764px) {
+  .HeaderText__title {
+    font-size: 42px;
+    letter-spacing: 3px;
+  }
+  .HeaderText__subtitle {
+    font-size: 22px;
+  }
+  .header {
+    min-height: 430px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+  #logo {
+    width: 19%;
+  }
+  .card-title {
+    font-size: 30px;
+  }
+  .card-text {
+    font-size: 20px;
+  }
+  .ReasonsText {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  .content {
+    width: 90%;
+  }
+  .HeaderText__title {
+    font-size: 30px;
+  }
+  .HeaderText__subtitle {
+    font-size: 18px;
+  }
+  .header {
+    min-height: 300px;
+  }
+  .ReasonsText {
+    font-size: 22px;
+  }
+  .BlockTitle {
+    font-size: 30px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+  #logo {
+    width: 23%;
+  }
+  .ReasonsList {
+    min-height: 800px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #e3e3e3ba;
+  }
+  .footer__text {
+    margin-top: 5%;
+    margin-left: 0%;
+  }
+  .footer__text {
+    text-align: center;
+  }
+  #logo {
+    margin-right: 0%;
+  }
+  .card-title {
+    font-size: 23px;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .HeaderText__title {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .HeaderText__subtitle {
+    font-size: 16px;
+  }
+  .header {
+    min-height: 230px;
+  }
+  .BlockTitle {
+    font-size: 28px;
+  }
+  .ReasonsText {
+    font-size: 19px;
+  }
+}

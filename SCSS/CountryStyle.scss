@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@font-face {
+    font-family: 'Neutral Face';
+    src: local('Neutral Face Regular'), local('Neutral-Face-Regular'),
+        url('../Fonts/NeutralFaceRegular.woff2') format('woff2'),
+        url('../Fonts/NeutralFaceRegular.woff') format('woff'),
+        url('../Fonts/NeutralFaceRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff'),
+        url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MontserratBold';
+    src: local('Montserrat Semi Bold'), local('Montserrat-Semi-Bold'),
+        url('../Fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../Fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('../Fonts/NeutralFaceRegular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Reza Zulmi Alfaizi';
+    src: local('Reza Zulmi Alfaizi'), local('Reza Zulmi Alfaizi'),
+        url('../Fonts/RezaZulmiSerif.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    margin-bottom: 0PX;
+}
+.content{
+    width: 80%;
+}
+.MainPageBack{
+    padding: 2%;
+    position: sticky;
+    top: 0;
+}
+.CountryDescription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DescriptionText{
+    font-size: 26px;
+    font-family: 'Montserrat';
+}
+#ImageDescripton{
+    max-width: 500px;
+}
+.MainCities{
+    margin-top: 10%;
+}
+.MainTitle{
+    font-family: 'Neutral Face';
+    font-size: 45px;   
+    margin-bottom: 5%; 
+}
+#CityPhoto{
+    max-width: 370px;
+    cursor: pointer;
+    
+}
+.CitiesSlider{
+    display: flex;
+    justify-content: space-between;
+}
+.Prague{
+    display: flex;
+    flex-direction: column;
+}
+.Title{
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: 'MontserratBold';
+}
+.Subtitle{
+    font-size: 19px;
+    font-family: 'Montserrat';
+}
+.Place{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+#PlacesPhoto{
+    max-width: 420px;
+    height: auto;
+}
+.BestPlaces{
+    margin-top: 10%;
+}
+.BestPlaces{
+    background: url("../Images/Czech/Background.png") center/cover no-repeat;
+    min-height: 1100px;
+}
+@media (max-width: 1400px) {
+    #CityPhoto{
+        max-width: 250px; 
+    }
+    #ImageDescripton{
+        max-width: 440px;
+    }
+    .DescriptionText{
+        font-size: 24px;
+    }
+    #CityPhoto{
+        max-width: 310px;
+    }
+    .MainTitle{
+        font-size: 42px;    
+    }
+    .Title{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1200px) {
+    #PlacesPhoto{
+        max-width: 350px;
+    }
+    .Place{
+        margin-bottom: 8%;
+    }
+    #ImageDescripton{
+        max-width: 340px;
+    }
+    .DescriptionText{
+        font-size: 20px;
+    }
+    #Back{
+        width: 65px;
+    }
+    #CityPhoto{
+        max-width: 260px;
+    }
+    .MainTitle{
+        font-size: 36px;    
+    }
+    .Title{
+        font-size: 23px;
+    }
+}
+@media (max-width: 996px) {
+    #ImageDescripton{
+        max-width: 310px;
+    }
+    .DescriptionText{
+        font-size: 17px;
+    }
+    #Back{
+        width: 55px;
+    }
+    #CityPhoto{
+        max-width: 200px;
+    }
+    .MainTitle{
+        font-size: 30px;    
+    }
+    .Title{
+        font-size: 20px;
+    }
+    .Subtitle{
+        font-size: 15px;
+        width: 95%;
+    }
+    #PlacesPhoto{
+        max-width: 270px;
+    }
+}
+@media (max-width: 764px) {
+    .Place{
+        display: flex;
+        flex-direction: column;
+    }
+    #PlacesPhoto{
+        min-width: 500px;
+        height: auto;
+    }
+    .CountryDescription{
+        display: flex;
+        flex-direction: column;
+    }
+    #ImageDescripton{
+        width: 100%;
+    }
+    #Back{
+        width: 42px;
+    }
+    #CityPhoto{
+        max-width: 145px;
+    }
+    .PlaceReverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .MainTitle{
+        font-size: 22px;    
+    }
+    .Title{
+        font-size: 17px;
+    }
+    .Subtitle{
+        font-size: 13px;
+        width: 95%;
+    }
+    .TextPlace{
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 560px) {
+    #PlacesPhoto{
+        min-width: 30px;
+        height: auto;
+    }
+    #Back{
+        width: 35px;
+    }
+    #ImageDescripton{
+        max-width: 370px;
+    }
+    #CityPhoto{
+        max-width: 130px;
+    }
+    .Subtitle{
+        font-size: 11px;
+    }
+
+}
+@media (max-width: 425px) {
+    #PlacesPhoto{
+        width: 260px;
+        height: auto;
+    }
+    #Back{
+        width: 22px;
+    }
+    #ImageDescripton{
+        max-width: 250px;
+    }
+    #CityPhoto{
+        max-width: 90px;
+    }
+    .MainTitle{
+        font-size: 18px;  
+    }   
+}
